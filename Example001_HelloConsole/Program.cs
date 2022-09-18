@@ -1,1 +1,1 @@
-﻿Console.WriteLine("2 Hello, World!"); // это комментарий
+﻿Console.WriteLine("Hello, Kiwi, from me!"); // это комментарий
