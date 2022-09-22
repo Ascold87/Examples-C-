@@ -1,7 +1,7 @@
 ﻿Console.Write("Назовись, смертный!!! - ");
 string username = Console.ReadLine();
 
-if(username.ToLower() == "ascold")
+if (username.ToLower() == "ascold")
 {
     Console.WriteLine("Приветствую тебя, мой лорд!!!");
 }
