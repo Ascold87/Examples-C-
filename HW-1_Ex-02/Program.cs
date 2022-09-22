@@ -14,9 +14,13 @@ if (user_a > user_b)
     Console.Write("Компьютер говорит, что " + user_a);
     Console.WriteLine(" больше " + user_b);
 }
-else
+else if (user_a < user_b)
 {
     Console.Write("Компьютер говорит, что " + user_b);
     Console.WriteLine(" больше " + user_a);
 }
-Console.WriteLine("Попробуйте еще раз?");
+else
+{
+    Console.WriteLine("Компьютер говорит, что числа равны");
+}
+Console.WriteLine("Спасибо за внимание и удачи!");
