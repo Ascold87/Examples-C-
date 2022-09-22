@@ -1,18 +1,22 @@
-﻿//Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-//a = 5; b = 7 -> max = 7
-//a = 2 b = 10 -> max = 10
-//a = -9 b = -3 -> max = -3
+﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введены числа 5 и 7. Какое же из них больше?");
+Console.WriteLine("Введите два числа. Посмотрим, какое из них больше?");
+Console.WriteLine("Введите первое число");
+int user_a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int user_b = int.Parse(Console.ReadLine());
 
-int a = 5;
-int b = 7;
-if (a < b)
+if (user_a > user_b)
 {
-    Console.WriteLine("Компьютер говорит, что 7 больше 5.");
+    Console.Write("Компьютер говорит, что " + user_a);
+    Console.WriteLine(" больше " + user_b);
 }
 else
 {
-    Console.WriteLine("5 больше 7. Компьютер совсем сумашедший.");
+    Console.Write("Компьютер говорит, что " + user_b);
+    Console.WriteLine(" больше " + user_a);
 }
-Console.WriteLine("Попробуйте еще раз?)))");
+Console.WriteLine("Попробуйте еще раз?");
