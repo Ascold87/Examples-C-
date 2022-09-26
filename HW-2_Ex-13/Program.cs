@@ -16,5 +16,5 @@ else if(user_number > 1000)
 else
 {
     int result = ((user_number / 100) % 10);
-Console.WriteLine("Третья цифра: " + result); 
+Console.WriteLine("Цифра, обозначающая третий порядок (А*10^3) - " + result + "."); 
 }
