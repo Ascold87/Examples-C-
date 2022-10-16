@@ -9,10 +9,10 @@ int ReadData(string msg)
     return number;
 }
 
-int[] FillArray(int length, int lowest, int highest)
+int[] FillArray(int lowest, int highest)
 {
-    int[] array = new int[length];
-    for (int i = 0; i < length; i++)
+    int[] array = new int[8];
+    for (int i = 0; i < 8; i++)
     {
         array[i] = new Random().Next(lowest, highest + 1);
     }
@@ -23,12 +23,11 @@ void PrintArray(int[] array)
     Console.Write("[");
     for (int i = 0; i < array.Length - 1; i++)
     {
-        Console.Write(array[i] + ".  ");
+        Console.Write(array[i] + " ");
     }
     Console.Write(array[array.Length - 1] + "]");
 }
-int arrayLength = ReadData("Введите размер массива: ");
 int min = ReadData("Введите минимальное значение: ");
 int max = ReadData("Введите максимальное значение: ");
-int[] array = FillArray(arrayLength, min, max);
+int[] array = FillArray(min, max);
 PrintArray(array);
