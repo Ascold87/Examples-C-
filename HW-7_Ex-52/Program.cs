@@ -50,7 +50,6 @@ string Average(int[,] getMatrix, int row, int column)
         average = Math.Round(average, 1);
         if (j != row - 1) result += $"{average.ToString()}; ";
         else result += $"{average.ToString()}. ";
-        // result += String.Join("", $"{average.ToString()}; "); - первое решение.
         average = 0;
         sum = 0;
     }
