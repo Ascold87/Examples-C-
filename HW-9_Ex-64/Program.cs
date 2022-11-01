@@ -18,7 +18,7 @@ void PrintData2(string msg)
     Console.WriteLine(msg);
 }
 
-void Numbers(int A) // тут идёт задание рекурсии
+void Numbers(int A)
 {
     while (A > 0)
     {
